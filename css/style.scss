@@ -1,0 +1,185 @@
+@import 'variables';
+
+
+@mixin cuadradosSection {
+    border: 1px solid black;
+    width: 50%;
+    position: relative;
+    left: 140px;
+    padding: 20px 0px;
+    background: rgb(255, 249, 240);
+    font-size: $tamanoTexto;
+}
+
+#fondo {
+    background: rgb(41, 37, 37);
+    border: 2px rgb(41, 37, 37) solid;
+    color: #fff;
+    
+
+    h1 {
+        position: relative;
+        left: 820px;
+        width: 500px;
+    }
+
+    img {
+        position: relative;
+        left: 820px;
+        border-radius: 50%;
+    }
+}
+
+#menu {
+    position: relative;
+    left: 180px;
+    top: -20px;
+    width: 90%;
+    
+
+    nav{
+        a{
+            text-decoration:none;
+            color:inherit;
+            font-size:$medium;
+            
+        }
+        li{
+            display:inline-block; 
+            width:15%; 
+            padding:10px 10px;
+            background-color:rgb(41, 37, 37);
+            border:3px solid rgb(41, 37, 37);
+            text-align:center;
+            color:#fff;            
+            border-radius: 5px;
+            border: 2px solid #000;
+        }
+
+        li .hover:hover {
+            outline: 0;
+            background: #4ee2e2;
+            border: 2px dotted #fff;
+        }
+
+    }
+}
+
+#menu a:hover {
+    color: red;
+}
+
+#misDatos {
+    @include cuadradosSection;
+}
+
+#quienSoy{
+    @include cuadradosSection;
+    top: 20px;
+
+    h1{
+        position: relative;
+        left: 15px;
+    }
+
+    p{
+        position: relative;
+        left: 15px;
+        width: 95%;
+        font-size: $tamanoTexto;
+    }
+
+}
+
+#habilidades{
+    @include cuadradosSection;
+    top: 40px;
+
+    h1{
+        position: relative;
+        left: 15px;
+    }
+
+    ul li{
+        display:inline-block;
+        text-align:center;
+        color:#000;
+        font-size:14px;
+        width:15%; 
+        padding:10px 10px;
+        background-color:rgb(75, 148, 197);
+        border:3px solid rgb(10, 10, 10);
+        margin-top: 10px;
+    }
+}
+
+#formulario {
+    border: 1px solid black;
+    width: 28%;
+    height: 355px;
+    position: fixed;
+    left: 1150px;
+    top: 365px;
+    padding: 20px 0px;
+    background: rgb(255, 249, 240);
+    font-size: 15px;
+
+    h1{
+        position: relative;
+        left: 15px;
+    }
+
+    label {
+        font-size: $tamanoTexto;
+        position: relative;
+        left: 10px;
+    }
+        
+    input {
+        position: relative;
+        left: 20px;
+        padding: 10px 10px;
+    }
+
+    .nombres {
+        padding: 30px 10px;
+    }
+
+    .nombresInput {
+        width: 50%;
+    }
+
+    .apellidos {
+        padding: 30px 8.5px;
+    }
+
+    .apellidosInput {
+        width: 50%;
+    }
+
+    .correo {
+        padding: 30px 14px;
+    }
+
+    .correoInput {
+        width: 50%;
+    }
+
+    .mensaje{
+        padding: 30px 9px;
+    }
+
+    .mensajeInput{
+        width: 50%;
+        height: 50%;
+    }
+
+    #envio{
+        position: relative;
+        top: 50px;
+    }
+}
+
+
+
+
